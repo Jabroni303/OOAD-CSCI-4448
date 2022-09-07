@@ -1,0 +1,40 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.*;
+
+public class Processor{
+
+    public static String input(){
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Please enter a string:");
+            String word = input.nextLine();
+            System.out.println("Your entered word is: " + word);
+
+    }
+
+    public static String clean(){
+        String uppercase = word.toUpperCase();
+            System.out.println("Your cleaned word is now: " + uppercase);
+    }
+
+    public static String sorted(){
+            char[] charArray = uppercase.toCharArray();
+            Arrays.sort(charArray);
+            String sortedString = new String(charArray);
+            System.out.println("Alphabetically sorted, your string is now: " + sortedString);
+
+    }
+
+    public static String palindrome(){
+        char [] str= sortedString.toCharArray();
+            char [] temp = str;
+            int length = str.length;
+            for (char c:temp){
+                length--;
+                str[length] = c;
+            }
+            System.out.println("Your sorted string is now a palindrome: ");
+            System.out.println(new String(str))
+    }
+
+}
