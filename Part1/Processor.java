@@ -40,7 +40,7 @@ public class Processor{
             return palin;
     }
 
-    public static void execute(){
+    public static void execute(){ // execute functions carries out all methods when called in main
         String s = new String();
 
         Processor p = new Processor();
